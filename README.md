@@ -2,4 +2,5 @@
 
 Following instructions from the following tutorial:
 
-https://www.robinwieruch.de/javascript-project-setup-tutorial/
+- [X] https://www.robinwieruch.de/javascript-project-setup-tutorial/
+- [X] https://www.robinwieruch.de/webpack-setup-tutorial/
