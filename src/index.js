@@ -1,3 +1,13 @@
-const log = 'Hello Webpack Project with Babel';
+import React from 'react';
+import ReactDOM from 'react-dom';
 
-console.log({log});
+import App from './App';
+ 
+const title = 'React with Webpack and Babel';
+ 
+ReactDOM.render(
+    <App title={title} />,
+    document.getElementById('app')
+);
+
+module.hot.accept();
