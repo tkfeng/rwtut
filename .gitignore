@@ -17,6 +17,10 @@ yarn-error.log*
 #Build generated
 dist/
 
+# dotenv environment variables file(s)
+.env
+.env.*
+
 ### VisualStudioCode ###
 .vscode
 .vscode/*
