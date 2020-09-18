@@ -1,11 +1,9 @@
-const webpack = require('webpack');
+const path = require('path');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
-    devtool: 'eval-source-map',
     entry: './src/index.js',
-    mode: 'development',
     module: {
       rules: [
         {
@@ -19,15 +17,14 @@ module.exports = {
       extensions: ['*', '.js', '.jsx']
     },
     output: {
-      path: __dirname + '/dist',
+      path: path.resolve(__dirname, '../', 'dist'),
       publicPath: '/',
       filename: 'bundle.js'
     },
     plugins: [
-      new webpack.HotModuleReplacementPlugin(),
       new CleanWebpackPlugin(),
       new HtmlWebpackPlugin({
-        title: 'Hello Webpack bundled JavaScript Project',
+        title: 'Hello Webpack bundled React Project',
         template: './index.html'
       })
     ],

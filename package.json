@@ -5,8 +5,8 @@
   "repository": "https://github.com/tkfeng/rwtut.git",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --config ./webpack.dev.js",
-    "build": "webpack --config ./webpack.prod.js",
+    "start": "webpack-dev-server --config build-utils/webpack.config.js --env.env=dev",
+    "build": "webpack --config build-utils/webpack.config.js --env.env=prod",
     "clean": "rimraf ./dist && mkdir dist",
     "test-build": "npm run build && http-server dist",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -24,7 +24,8 @@
     "react-hot-loader": "^4.12.21",
     "webpack": "^4.44.1",
     "webpack-cli": "^3.3.12",
-    "webpack-dev-server": "^3.11.0"
+    "webpack-dev-server": "^3.11.0",
+    "webpack-merge": "^5.1.4"
   },
   "dependencies": {
     "react": "^16.13.1",

@@ -3,11 +3,13 @@ import ReactDOM from 'react-dom';
 
 import App from './App';
  
-const title = 'React with advanced Webpack and Babel';
+const title = 'React with Webpack using build-utils';
  
 ReactDOM.render(
     <App title={title} />,
     document.getElementById('app')
 );
 
-module.hot.accept();
+if (module.hot) {
+    module.hot.accept();
+}
