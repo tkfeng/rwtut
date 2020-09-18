@@ -1,6 +1,14 @@
 # rwtut
 
-Following instructions from the following tutorial:
+## NPM Scripts
+`npm start` - Start a dev server with hot-reload enabled.\
+`npm run build` - Build a production grade distribution binary to `./dist`\
+`npm run test-build` - Test the production binary via an `http-server`.\
+`npm run clean` - Remove and re-create `dist/`.
+
+## RW Tutorials
+
+Following instructions from RW tutorials:
 
 - [X] https://www.robinwieruch.de/javascript-project-setup-tutorial/
 - [X] https://www.robinwieruch.de/webpack-setup-tutorial/
