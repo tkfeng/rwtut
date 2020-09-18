@@ -9,5 +9,5 @@ module.exports = {
       path: './.env.development',
     }),
     new HotModuleReplacementPlugin(),
-  ]
+  ],
 };
