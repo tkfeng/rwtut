@@ -5,8 +5,8 @@
   "repository": "https://github.com/tkfeng/rwtut.git",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --config ./webpack.config.js --mode development",
-    "build": "webpack --config ./webpack.config.js --mode production",
+    "start": "webpack-dev-server --config ./webpack.dev.js",
+    "build": "webpack --config ./webpack.prod.js",
     "clean": "rimraf ./dist && mkdir dist",
     "test-build": "npm run build && http-server dist",
     "test": "echo \"Error: no test specified\" && exit 1"
