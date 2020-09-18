@@ -18,5 +18,5 @@ Following instructions from RW tutorials:
 - [X] How to set up an advanced Webpack application https://www.robinwieruch.de/webpack-advanced-setup-tutorial
 
 - [X] How to set up React with Webpack and Babel https://www.robinwieruch.de/minimal-react-webpack-babel-setup
-- [ ] How to use ESLint in Webpack https://www.robinwieruch.de/webpack-eslint
+- [X] How to use ESLint in Webpack https://www.robinwieruch.de/webpack-eslint
 - [ ] How to use ESLint in React https://www.robinwieruch.de/react-eslint-webpack-babel
