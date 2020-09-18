@@ -3,7 +3,9 @@
 ## NPM Scripts
 `npm start` - Start a dev server with hot-reload enabled.\
 `npm run build` - Build a production grade distribution binary to `./dist`\
+`npm run build:analyze` - Build a production grade distribution binary and analyzer reports to `./dist`\
 `npm run test-build` - Test the production binary via an `http-server`.\
+`npm run test-build:analyze` - Test the analyzer production binary via an `http-server`.\
 `npm run clean` - Remove and re-create `dist/`.
 
 ## RW Tutorials

@@ -7,8 +7,10 @@
   "scripts": {
     "start": "webpack-dev-server --config build-utils/webpack.config.js --env.env=dev",
     "build": "webpack --config build-utils/webpack.config.js --env.env=prod",
+    "build:analyze": "npm run build -- --env.addon=bundleanalyze --env.addon=bundlevisualizer",
     "clean": "rimraf ./dist && mkdir dist",
     "test-build": "npm run build && http-server dist",
+    "test-build:analyze": "npm run build:analyze && http-server dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "TK Feng <tk.feng@gmail.com>",
@@ -24,9 +26,11 @@
     "http-server": "^0.12.3",
     "react-hot-loader": "^4.12.21",
     "webpack": "^4.44.1",
+    "webpack-bundle-analyzer": "^3.9.0",
     "webpack-cli": "^3.3.12",
     "webpack-dev-server": "^3.11.0",
-    "webpack-merge": "^5.1.4"
+    "webpack-merge": "^5.1.4",
+    "webpack-visualizer-plugin": "^0.1.11"
   },
   "dependencies": {
     "react": "^16.13.1",
